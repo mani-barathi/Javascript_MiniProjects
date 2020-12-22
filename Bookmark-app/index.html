@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bookmark App</title>
+</head>
+
+<body>
+    <div class="app-container d-flex align-items-center">
+        <div class="add__bookmark d-flex">
+            <button class="add__bookmarkBtn" onclick="displayModal()">
+                Add Bookmark
+            </button>
+        </div>
+        <div class="item__container d-flex">
+
+            <!-- <div class="item">
+                <div class="item__btnContainer">
+                    <span class="item__closeBtn" onclick="deleteBookmark(this)">X</span>
+                </div>
+                <div class="item__mainContainer">
+                    <img src="https://s2.googleusercontent.com/s2/favicons?domain=https://web.whatsapp.com/"
+                        class="item__icon">
+                    <a href="www.gmail.com" class="item__link">This is Manibarathi's Github</a>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="modal d-flex align-items-center">
+        <form autocomplete="off" class="modal__form">
+            <h2 class="item__closeBtn" onclick="closeModal()">X</h2>
+            <h2 class="modal__formTitle text-center"> Enter a New Bookmark </h2>
+            <input type="text" class="modal__formInput" id="bookmark-name" placeholder="Enter the Bookmark Name"
+                required spellcheck="false"> <br>
+            <input type="text" class="modal__formInput" id="bookmark-link" placeholder="Enter the URL" required
+                spellcheck="false"> <br>
+            <div class="modal__formError"></div>
+            <button class="modal__formBtn">Add</button>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
