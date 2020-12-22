@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Momentum-Clone</title>
+</head>
+
+<body>
+    <!-- background image is given in app-container -->
+    <div class="app-container">
+
+        <!-- Main Clock and Name Container -->
+        <div class="text-container">
+            <span class="clock"></span>
+            <div class="text">
+                <span class="greeting">Good evening, </span>
+                <span class="name"></span>
+            </div>
+        </div>
+
+        <!-- Name Input Container -->
+        <div class="input-model">
+            <h1 class="welcome-text">Welcome !</h1>
+            <form autocomplete="off" class="name-form">
+                <input type="text" class="name-input" required>
+                <label for="name" class="name-label">
+                    <span class="label-text"> Enter your name </span>
+                </label>
+            </form>
+        </div>
+
+    </div> <!-- Closing of App Container-->
+
+    <!-- Background Image info container (bottom left) -->
+    <div class="bg-info">
+        <a href="" class="bg-info-link" target="_blank"></a>
+    </div>
+    <!-- Quote container (bottom center) -->
+    <div class="quote-container">
+        <div class="quote-wrapper">
+            <p class="quote"> </p>
+            <p class="author"> <cite class="author-name"></cite> </p>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="background-cover"></div> <!-- white background container used for transition effect -->
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
