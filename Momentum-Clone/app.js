@@ -45,7 +45,7 @@ function getTimeDifference(currentTime, retrivedTime) {
 }
 
 async function getWallpaper() {
-    const API_KEY = 'UoPu98cybYaHnihiXHK5HuOocdgjLVgyqkJdgBhvd1E';
+    const API_KEY = 'CW6mm5Yjr1W25Ks5asIvTY02kAYHWv2iiTonfKkTBYc';
     const count = 1;
     const query = 'wallpapers';
     const URL2 = `https://api.unsplash.com/photos/random/?orientation=landscape&count=${count}&client_id=${API_KEY}&query=${query}`;
