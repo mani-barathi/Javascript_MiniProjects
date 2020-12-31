@@ -6,7 +6,7 @@ Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to Vie
 |No| Project | Link |
 |--|---------|------|
 |1 | [Bookamrk App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Bookmark-app) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Bookmark-app/index.html)
-|2 | [Filterable List](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Filterable_List) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Filterable_List/index.html)
+|2 | [Filterable List](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Filterable_list) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Filterable_list/index.html)
 |3 | [Github Profile](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Github_Profile) | [Link](https://manibarathi.github.io/Javascript_MiniProjects/Github_Profile/index.html)
 |4 | [Infinite Scroll](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Infinite_scroll) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Infinite_scroll/index.html)
 |5 | [Momentum Clone](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Momentum-Clone) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Momentum-Clone/index.html)
