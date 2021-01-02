@@ -8,9 +8,8 @@ const weatherUnitEl = document.querySelector('.weather__unit')
 const weatherHumidityEl = document.querySelector('.weather__humidity')
 const weatherDescriptionEl = document.querySelector('.weather__description')
 
-let latitude = null
-let longitude = null
-
+let latitude, longitude = null
+let celcius, farenheit = null
 
 async function getWeatherByGeoLocation() {
     if (latitude && longitude) {
@@ -18,7 +17,7 @@ async function getWeatherByGeoLocation() {
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`)
             const data = await response.json()
             console.log(data)
-            renderWeather(data)
+            setandRenderWeather(data)
         } catch (error) {
             console.log(error)
         }
@@ -37,7 +36,7 @@ async function getWeatherByCity(event) {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
         const data = await response.json()
         console.log(data)
-        renderWeather(data)
+        setandRenderWeather(data)
     } catch (error) {
         console.log(error)
     }
@@ -45,7 +44,10 @@ async function getWeatherByCity(event) {
 }
 
 
-function renderWeather(data) {
+function setandRenderWeather(data) {
+    celcius = data.main.temp                                    // usefull for future convertion
+    farenheit = Math.floor((data.main.temp * (9 / 5)) + 32)
+
     weatherLocationEl.textContent = data.name
     weatherValueEl.textContent = data.main.temp
     weatherUnitEl.textContent = 'C'
@@ -55,15 +57,14 @@ function renderWeather(data) {
 
 
 function toggleTemperatureUnit() {
-    let currentWeatherValue = weatherValueEl.textContent
     let currenWeatherUnit = weatherUnitEl.textContent
 
     if (currenWeatherUnit === 'C') {
-        weatherValueEl.textContent = Math.floor((currentWeatherValue * (9 / 5)) + 32)
+        weatherValueEl.textContent = farenheit
         weatherUnitEl.textContent = 'F'
     }
     else {
-        weatherValueEl.textContent = Math.floor((currentWeatherValue - 32) * (5 / 9))
+        weatherValueEl.textContent = celcius
         weatherUnitEl.textContent = 'C'
     }
 }
