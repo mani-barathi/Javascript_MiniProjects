@@ -14,5 +14,5 @@ Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to Vie
 |7 | [Quotes Generator](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Quote_generator) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Quote_generator/index.html)
 |8 | [TicTacToe](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TicTacToe) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TicTacToe/index.html)
 |9 | [TodoList](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TodoList) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)
-|9 | [Weather App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Weather_App) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)
+|10 | [Weather App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Weather_App) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Weather_App/index.html)
 
