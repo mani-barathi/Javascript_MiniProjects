@@ -12,13 +12,14 @@ body{
 }
 
 .app{
-    transform: translateY(-20%);
+    transform: translateY(-30%);
 }
 
 .form{
     margin-top: 2rem;
     padding: 0 1rem;
     display: flex;
+    justify-content: center;
 }
 .form__input{
     outline: none;
@@ -63,4 +64,17 @@ body{
 .weather__humidity, .weather__description{
     display: block;
     font-weight: 500;
+}
+
+@media screen and (max-width:450px){
+    .weather__location{
+        font-size: 3rem;
+    }
+    
+    .weather__value{
+        font-size: 2rem;
+    } 
+    .weather__unit{
+        font-size: 1rem;
+    }
 }

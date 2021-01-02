@@ -12,16 +12,6 @@ let latitude = null
 let longitude = null
 
 
-function getGeoLocation() {
-    navigator.geolocation.getCurrentPosition(async (position) => {
-        latitude = position.coords.latitude
-        longitude = position.coords.longitude
-        console.log(`(${latitude}, ${longitude})`)
-        await getWeatherByGeoLocation()
-    })
-}
-
-
 async function getWeatherByGeoLocation() {
     if (latitude && longitude) {
         try {
@@ -59,17 +49,43 @@ function renderWeather(data) {
     weatherLocationEl.textContent = data.name
     weatherValueEl.textContent = data.main.temp
     weatherUnitEl.textContent = 'C'
-    weatherHumidityEl.textContent = data.main.humidity
-    weatherDescriptionEl.textContent = data.weather[0].main
+    weatherHumidityEl.textContent = (data.main.humidity) ? `Humidity ${data.main.humidity}%` : ``
+    weatherDescriptionEl.textContent = (data.weather[0].main) ? `${data.weather[0].main}` : ``
 }
 
 
+function toggleTemperatureUnit() {
+    let currentWeatherValue = weatherValueEl.textContent
+    let currenWeatherUnit = weatherUnitEl.textContent
+
+    if (currenWeatherUnit === 'C') {
+        weatherValueEl.textContent = Math.floor((currentWeatherValue * (9 / 5)) + 32)
+        weatherUnitEl.textContent = 'F'
+    }
+    else {
+        weatherValueEl.textContent = Math.floor((currentWeatherValue - 32) * (5 / 9))
+        weatherUnitEl.textContent = 'C'
+    }
+}
+
+function getGeoLocation() {
+    navigator.geolocation.getCurrentPosition(async (position) => {
+        latitude = position.coords.latitude
+        longitude = position.coords.longitude
+        console.log(`(${latitude}, ${longitude})`)
+        await getWeatherByGeoLocation()
+    })
+}
+
+// Event Listners
 formEl.addEventListener('submit', getWeatherByCity)
-getWeatherByGeoLocation()
+weatherValueEl.addEventListener('click', toggleTemperatureUnit)
+weatherUnitEl.addEventListener('click', toggleTemperatureUnit)
+window.addEventListener('load', getGeoLocation)
 
 
-/* Notes
-
+/* -------- Notes ------------
+API - https://openweathermap.org/api
 Api EndPoint with lat,long  = `api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid=${API_KEY}`
 Api EndPoint with City name = `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid=${API_KEY}`
 
