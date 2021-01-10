@@ -47,10 +47,8 @@ function downloadFile() {
 
 function loadPreviousText() {
     const data = JSON.parse(localStorage.getItem(TEXT_KEY))
-    if (data) {
-        titleEl.innerText = data.title || 'newFile'
-        editorEl.value = data.content || ''
-    }
+    titleEl.innerText = (data && data.title) ? data.title : 'newFile'
+    editorEl.value = (data && data.content) ? data.content : ''
 }
 
 function showSavedPopup() {
