@@ -40,7 +40,7 @@ body{
     font-weight: 500;
     white-space: nowrap; 
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: '--'; 
     outline: none;
     flex: 1;
 }
@@ -72,30 +72,54 @@ body{
     background-color: #3797a4;
 }
 
+.header__btnClear{
+    background-color: #7c9473;
+}
+
 .editor{
     flex: 1;
     background-color: var(--editorBgColor);
     outline: none;
-    padding: 1rem;
-    cursor:text;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 0.3rem 1rem;
     box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
+    min-width: 100%;
+    resize: none;
 }
-/* For the Overflow ScrollBar */
-.editor::-webkit-scrollbar-track
-{
+
+.editor::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
 }
 
-.editor::-webkit-scrollbar
-{
+.editor::-webkit-scrollbar{
 	width: 6px;
 	background-color: #F5F5F5;
 }
 
-.editor::-webkit-scrollbar-thumb
-{
+.editor::-webkit-scrollbar-thumb{
 	background-color: #9b9595;
 }
 
+
+.popup{
+    background-color:#13916f;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    pointer-events: none;
+    transform: translatey(100vh);
+    transition: all 0.5s ease;
+}
+
+.show-popup{
+    transform: translatey(0);
+}
