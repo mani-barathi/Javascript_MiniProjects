@@ -8,7 +8,7 @@ Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to Vie
 |1 | [Bookamrk App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Bookmark-app) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Bookmark-app/index.html)
 |2 | [Cube Timer](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/CubeTimer) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/CubeTimer/index.html)
 |3 | [Filterable List](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Filterable_list) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Filterable_list/index.html)
-|4 | [Filterable List](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Form_Validation) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Form_Validation/index.html)
+|4 | [Form Validation](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Form_Validation) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Form_Validation/index.html)
 |5 | [Github Profile](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Github_Profile) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Github_Profile/index.html)
 |6 | [Infinite Scroll](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Infinite_scroll) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Infinite_scroll/index.html)
 |7 | [Momentum Clone](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Momentum-Clone) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Momentum-Clone/index.html)
