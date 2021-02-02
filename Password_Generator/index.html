@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title-text">Password Generator</h1>
+        <form>
+            <div class="row">
+                <input type="text" class="input">
+                <button class="copy-btn">COPY</button>
+            </div>
+
+            <div class="options">
+                <label class="label"> Length</label>
+                <input type="number" name="length" min="6" max="32" value="8" class="length">
+            </div>
+
+            <div class="options">
+                <label class="label"> Lowercase Letters</label>
+                <input type="checkbox" name="lowercase" checked>
+            </div>
+            <div class="options">
+                <label class="label"> UpperCase Letters</label>
+                <input type="checkbox" name="uppercase">
+            </div>
+            <div class="options">
+                <label class="label"> Numbers </label>
+                <input type="checkbox" name="numbers" checked>
+            </div>
+            <div class=" options">
+                <label class="label"> Symbols </label>
+                <input type="checkbox" name="symbols">
+            </div>
+
+            <button type="submit" class="generate-btn">GENERATE PASSWORD</button>
+        </form>
+    </div>
+
+    <!-- SnackBar (Popup Notification) -->
+    <div class="snackbar">Copied To Clipboard!</div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
