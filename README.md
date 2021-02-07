@@ -1,5 +1,5 @@
 # Javascript_MiniProjects
-This Repo contains some of the Vanila Javascript Mini Projects which I did. All the projects listed here are Beginner to Intermdiate Projects.
+This Repo contains some of the Vanila Javascript Mini Projects which I did. All the projects listed here are Beginner to Intermdiate level.
 
 Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to View the Projects
 
@@ -11,13 +11,14 @@ Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to Vie
 |4 | [Filterable List](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Filterable_list) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Filterable_list/index.html)
 |5 | [Form Validation](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Form_Validation) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Form_Validation/index.html)
 |6 | [Github Profile](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Github_Profile) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Github_Profile/index.html)
-|7 | [Infinite Scroll](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Infinite_scroll) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Infinite_scroll/index.html)
-|8 | [Momentum Clone](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Momentum-Clone) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Momentum-Clone/index.html)
-|9 | [Movie Desk](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Movie_desk) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Movie_desk/index.html)
-|10 | [Password Generator](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Password_Generator) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Password_Generator/index.html)
-|11 | [Quotes Generator](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Quote_generator) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Quote_generator/index.html)
-|12 | [Text Editor](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Text_Editor) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Text_Editor/index.html)
-|13 | [TicTacToe](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TicTacToe) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TicTacToe/index.html)
-|14 | [TodoList](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TodoList) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)
-|15 | [Weather App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Weather_App) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Weather_App/index.html)
+|7 | [Image Carousel](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Image_Carousel) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Image_Carousel/index.html)
+|8 | [Infinite Scroll](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Infinite_scroll) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Infinite_scroll/index.html)
+|9 | [Momentum Clone](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Momentum-Clone) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Momentum-Clone/index.html)
+|10 | [Movie Desk](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Movie_desk) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Movie_desk/index.html)
+|11 | [Password Generator](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Password_Generator) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Password_Generator/index.html)
+|12 | [Quotes Generator](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Quote_generator) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Quote_generator/index.html)
+|13 | [Text Editor](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Text_Editor) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Text_Editor/index.html)
+|14 | [TicTacToe](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TicTacToe) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TicTacToe/index.html)
+|15 | [TodoList](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TodoList) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)
+|16 | [Weather App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Weather_App) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Weather_App/index.html)
 

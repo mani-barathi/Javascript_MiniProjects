@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="carousel">
+        <!-- Buttons -->
+        <a class="carousel__btn carousel__leftBtn">&#10094;</a>
+        <a class="carousel__btn carousel__rightBtn">&#10095;</a>
+
+        <div class="carousel__image">
+            <img
+                src="https://images.unsplash.com/photo-1612549671943-192f276aaf95?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <p class="carousel__text">This is the caption for the first Image.</p>
+        </div>
+
+        <div class="carousel__image">
+            <img
+                src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <p class="carousel__text">This is the caption for the second Image.</p>
+        </div>
+
+        <div class="carousel__image">
+            <img
+                src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            <p class="carousel__text">This is the caption for the third Image.</p>
+        </div>
+
+        <!-- Dots -->
+        <div class="carousel__dotsContainer">
+            <div class="carousel__dot"></div>
+            <div class="carousel__dot"></div>
+            <div class="carousel__dot"></div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

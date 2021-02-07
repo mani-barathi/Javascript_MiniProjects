@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel{
+    width: 100%;
+    max-width: 600px;
+    margin: 5rem auto;
+    overflow-x: auto;
+    position: relative;
+}
+
+.carousel__image{
+    display: none;
+}
+
+.carousel__image > img{
+    width: 100%;
+    max-height: 350px;
+}
+
+.carousel__image--active{
+    display: block;
+    animation-name: fade;
+    animation-duration: .5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.carousel__btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel__btn:hover{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.carousel__btn:active{
+    font-size: 1.2rem;
+}
+
+.carousel__rightBtn{
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+.carousel__text{
+    text-align: center;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    user-select: none;
+    color: white;
+}
+
+.carousel__dotsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__dot{
+    width: 1rem;
+    height: 0.2rem;
+    background: rgb(163, 163, 163);
+    margin: 0 0.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.carousel__dot--active{
+    background:  rgb(82, 79, 79);
+}
