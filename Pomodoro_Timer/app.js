@@ -1,8 +1,10 @@
 const startBtn = document.querySelector('.start-btn')
+const stopBtn = document.querySelector('.stop-btn')
 const minutesEl = document.querySelector('.minutes')
 const secondsEl = document.querySelector('.seconds')
 const infoEl = document.querySelector('.info')
 const form = document.querySelector('form')
+const audioEl = document.querySelector('audio')
 
 const SECOND = 1000             // in milliseconds
 const MINUTE = SECOND * 60      // in milliseconds
@@ -11,6 +13,12 @@ let timer
 let endTime
 let isRunning = false
 let totalMinutes = 25
+
+function toggleElements(show) {
+    form.style.display = show ? 'block' : 'none'
+    startBtn.style.display = show ? 'initial' : 'none'
+    stopBtn.style.display = !show ? 'initial' : 'none'
+}
 
 function startSession() {
     if (isRunning)
@@ -26,9 +34,11 @@ function startSession() {
 
         if (isOver) {
             clearInterval(timer)
+            audioEl.play()
             infoEl.textContent = 'Session Completed'
             isRunning = false
             sendNotification()
+            toggleElements(true)
         } else {
             minutesEl.textContent = Math.floor((distance / MINUTE))
             secondsEl.textContent = Math.floor((distance % MINUTE) / SECOND)
@@ -40,8 +50,18 @@ function startSession() {
     minutesEl.textContent = `${totalMinutes - 1}`
     secondsEl.textContent = '59'
     infoEl.textContent = 'Session Going On'
+    toggleElements(false)
 }
 
+
+function stopSession() {
+    clearInterval(timer)
+    infoEl.textContent = 'Session Stopped'
+    isRunning = false
+    minutesEl.textContent = totalMinutes
+    secondsEl.textContent = '00'
+    toggleElements(true)
+}
 
 function getNotificationPermission() {
     if (!("Notification" in window))
@@ -72,15 +92,21 @@ function sendNotification() {
 
 function handleFormSubmit(e) {
     e.preventDefault()
-    if (isRunning) return
-
     totalMinutes = form.duration.value
     console.log(`Duration changed to ${totalMinutes}`)
     minutesEl.textContent = totalMinutes
 }
 
 // Initial Setup
-minutesEl.textContent = totalMinutes
 startBtn.addEventListener('click', startSession)
+stopBtn.addEventListener('click', stopSession)
 form.addEventListener('submit', handleFormSubmit)
 getNotificationPermission()
+
+// To prevent user closing the tab when the timer is running
+window.addEventListener('beforeunload', (event) => {
+    if (isRunning) {
+        event.preventDefault()
+        event.returnValue = 'You have unfinished changes!'
+    }
+})

@@ -8,25 +8,28 @@
     <title>Pomodoro Timer</title>
 </head>
 
-<body style="display: grid; place-items: center;padding: 1rem; padding-top: 25vh;">
+<body
+    style="display: grid; place-items: center;padding: 25vh 1rem 1rem;user-select: none; font-family: 'Segoe UI', sans-serif;background: #F4F6F6;">
 
-    <h1 class="info">Set the Duration and Start the Session</h1>
+    <h1 class="info">Start Session</h1>
 
     <h1>
-        <span class="minutes">00</span>
+        <span class="minutes">25</span>
         <span>:</span>
         <span class="seconds">00</span>
     </h1>
 
-    <button class="start-btn">
-        <h4>START</h4>
-    </button>
+    <button class="start-btn">START</button>
 
-    <br>
-    <form>
+    <button class="stop-btn" style="display: none;">STOP</button>
+
+
+    <form style="margin-top: 1.5rem;">
         <input type="number" name="duration" value="25" min="1" max="60">
         <button type="submit">Set</button>
     </form>
+
+    <audio src="./notify.mp3"></audio>
 
     <script src="./app.js"></script>
 </body>
