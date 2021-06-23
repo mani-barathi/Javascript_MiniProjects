@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <title>Weather App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="app">
-        <div class="weather">
-            <canvas id="icon" width="100" height="100"></canvas>
-            <h1 class="weather__location">Weather App</h1>
-            <span class="weather__value" title="Click to convert Unit"></span>
-            <span class="weather__unit" title="Click to convert Unit"></span>
-            <span class="weather__humidity"></span>
-            <span class="weather__description"></span>
-        </div>
+      <div class="weather">
+        <canvas id="icon" width="100" height="100"></canvas>
+        <h1 class="weather__location">Weather App</h1>
+        <span class="weather__value" title="Click to convert Unit"></span>
+        <span class="weather__unit" title="Click to convert Unit"></span>
+        <span class="weather__humidity"></span>
+        <span class="weather__description"></span>
+      </div>
 
-        <form class="form">
-            <input type="text" class="form__input" placeholder="Enter Location Name" required>
-            <button class="form__btn" type="submit">
-                search
-            </button>
-        </form>
-
+      <form class="form">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Enter Location Name"
+          required
+        />
+        <button class="form__btn" type="submit">search</button>
+      </form>
     </div>
 
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>

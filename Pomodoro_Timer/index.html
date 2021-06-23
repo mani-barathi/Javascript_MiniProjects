@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro Timer</title>
-</head>
+  </head>
 
-<body
-    style="display: grid; place-items: center;padding: 25vh 1rem 1rem;user-select: none; font-family: 'Segoe UI', sans-serif;background: #F4F6F6;">
-
+  <body
+    style="
+      display: grid;
+      place-items: center;
+      padding: 25vh 1rem 1rem;
+      user-select: none;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f6;
+    "
+  >
     <h1 class="info">Start Session</h1>
 
     <h1>
-        <span class="minutes">25</span>
-        <span>:</span>
-        <span class="seconds">00</span>
+      <span class="minutes">25</span>
+      <span>:</span>
+      <span class="seconds">00</span>
     </h1>
 
     <button class="start-btn">START</button>
 
-    <button class="stop-btn" style="display: none;">STOP</button>
+    <button class="stop-btn" style="display: none">STOP</button>
 
-
-    <form style="margin-top: 1.5rem;">
-        <input type="number" name="duration" value="25" min="1" max="60">
-        <button type="submit">Set</button>
+    <form style="margin-top: 1.5rem">
+      <input type="number" name="duration" value="25" min="1" max="60" />
+      <button type="submit">Set</button>
     </form>
 
     <audio src="./notify.mp3"></audio>
 
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>

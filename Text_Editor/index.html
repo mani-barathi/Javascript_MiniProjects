@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon"
-        href="https://raw.githubusercontent.com/mani-barathi/mani-barathi.github.io/master/assets/favicon.ico"
-        type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://raw.githubusercontent.com/mani-barathi/mani-barathi.github.io/master/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Text Editor</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="app">
-        <div class="header">
-            <div class="header__title" contenteditable="true" title="Edit the Title">
-                <!-- Title -->
-            </div>
-            &nbsp;
-            <button class="header__btnClear">clear</button>&nbsp;
-            <button class="header__btnSave">save</button>&nbsp;
-            <button class="header__btnDownload">download</button>
+      <div class="header">
+        <div
+          class="header__title"
+          contenteditable="true"
+          title="Edit the Title"
+        >
+          <!-- Title -->
         </div>
+        &nbsp;
+        <button class="header__btnClear">clear</button>&nbsp;
+        <button class="header__btnSave">save</button>&nbsp;
+        <button class="header__btnDownload">download</button>
+      </div>
 
-        <textarea class="editor" contenteditable="true" placeholder="Start Typing...">
-
-        </textarea>
-        <div class="popup">Saved to Local Storage</div>
+      <textarea
+        class="editor"
+        contenteditable="true"
+        placeholder="Start Typing..."
+      >
+      </textarea>
+      <div class="popup">Saved to Local Storage</div>
     </div>
     <script src="./FileSaver.min.js"></script>
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>

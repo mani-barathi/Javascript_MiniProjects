@@ -1,157 +1,159 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 100%;
-    min-height: 100vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.app{
-    padding: 1rem;
-    width: 100%;
-    max-width: 600px;
-    display: flex;
+.app {
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-3rem);
+}
+
+.app__titleText {
+  font-weight: 300;
+  font-size: 4rem;
+  color: rgba(119, 136, 153, 0.493);
+  user-select: none;
+  text-align: center;
+}
+.form {
+  margin: 2rem 0;
+}
+
+.form__input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid slategrey;
+}
+
+.form__input:focus {
+  border-bottom: 2px solid teal;
+}
+
+.form__input:valid {
+  border-bottom: 2px solid rgb(32, 184, 95);
+}
+
+.form__btn {
+  display: none;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.123);
+  position: relative;
+}
+
+.profile__image > img {
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.profile__info {
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.profile__infoName {
+  font-weight: 500;
+}
+.profile__infoLogin {
+  color: darkslategrey;
+}
+.profile__infoBio {
+  margin-top: 0.5rem;
+}
+
+.profile__infoStats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  user-select: none;
+}
+.profile__infoStats__Small {
+  font-weight: 700;
+  color: darkslategrey;
+}
+
+.profile__infoRepos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.profile__infoReposLink {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+  padding: 0.2rem 0.5rem;
+  background-color: rgba(119, 136, 153, 0.384);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.profile__infoReposLink:hover {
+  background-color: rgba(119, 136, 153, 0.6);
+}
+
+.profile__infoGitHubLink {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(47, 79, 79, 0.829);
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.5rem;
+}
+.profile__infoGitHubLink:hover {
+  color: rgba(47, 79, 79);
+}
+
+@media screen and (max-width: 601px) {
+  .app {
+    transform: initial;
+  }
+  .app__titleText {
+    font-size: 3rem;
+  }
+  .profile {
     flex-direction: column;
     align-items: center;
-    transform: translateY(-3rem);
-}
-
-.app__titleText{
-    font-weight: 300;
-    font-size: 4rem;
-    color: rgba(119, 136, 153, 0.493);
-    user-select: none;
+  }
+  .profile__info {
+    margin-left: 0;
+  }
+  .profile__infoName,
+  .profile__infoLogin {
     text-align: center;
-}
-.form{
-    margin: 2rem 0;
-}
-
-.form__input{
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid slategrey;
-}
-
-.form__input:focus{
-    border-bottom: 2px solid teal;
-}
-
-.form__input:valid{
-    border-bottom: 2px solid rgb(32, 184, 95);
-}
-
-.form__btn{
-    display: none;
-}
-
-.profile{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    border: 2px solid lightgrey;
-    box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.123);
-    position: relative;
-}
-
-.profile__image > img{
-    max-height: 150px ;
-    object-fit: contain;
-    border-radius: 5px;
-}
-
-.profile__info{
-    margin-left: 2rem;
-    flex: 1;
-}
-
-.profile__infoName{
-    font-weight: 500;
-}
-.profile__infoLogin{
-    color: darkslategrey;
-}
-.profile__infoBio{
-    margin-top: 0.5rem;
-}
-
-.profile__infoStats{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    padding: 0.4rem 1rem;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    user-select: none;
-}
-.profile__infoStats__Small{
-    font-weight: 700;
-    color: darkslategrey;
-}
-
-.profile__infoRepos{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0.5rem;
-}
-
-.profile__infoReposLink{
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    margin: 1rem 1rem 0 0;
-    padding:0.2rem 0.5rem;
-    background-color: rgba(119, 136, 153, 0.384);
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: 0.2s ease;
-}
-.profile__infoReposLink:hover{
-    background-color: rgba(119, 136, 153, 0.6);
-}
-
-.profile__infoGitHubLink{
-    text-decoration: none;
-    color: black;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: rgba(47, 79, 79, 0.829);
-    position: absolute;
-    bottom: 0.2rem;
-    right: 0.5rem;
-}
-.profile__infoGitHubLink:hover{
-    color: rgba(47, 79, 79);
-}
-
-@media screen and (max-width:601px){
-    .app{
-        transform: initial;
-    }
-    .app__titleText{
-        font-size: 3rem;
-    }
-    .profile{
-        flex-direction: column;
-        align-items: center; 
-    }
-    .profile__info{
-        margin-left: 0;
-    }
-    .profile__infoName,.profile__infoLogin{
-        text-align: center;
-    }
+  }
 }

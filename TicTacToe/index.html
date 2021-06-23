@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon"
-        href="https://f0.pngfuel.com/png/76/882/tic-tac-toe-game-x-vs-o-tic-tac-toe-%D9%84%D8%B9%D8%A8%D8%A9-%D8%A7%D9%83%D8%B3-%D8%A7%D9%88-x-o-4096-plus-android-png-clip-art-thumbnail.png"
-        type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://f0.pngfuel.com/png/76/882/tic-tac-toe-game-x-vs-o-tic-tac-toe-%D9%84%D8%B9%D8%A8%D8%A9-%D8%A7%D9%83%D8%B3-%D8%A7%D9%88-x-o-4096-plus-android-png-clip-art-thumbnail.png"
+      type="image/x-icon"
+    />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="app-container">
-        <h1 class="title">Tic Tac Toe</h1>
-        <div class="board-container">
-            <div class="box box0" data-id=0>
-                <p></p>
-            </div>
-            <div class="box box1" data-id=1>
-                <p></p>
-            </div>
-            <div class="box box2" data-id=2>
-                <p></p>
-            </div>
-            <div class="box box3" data-id=3>
-                <p></p>
-            </div>
-            <div class="box box4" data-id=4>
-                <p></p>
-            </div>
-            <div class="box box5" data-id=5>
-                <p></p>
-            </div>
-            <div class="box box6" data-id=6>
-                <p></p>
-            </div>
-            <div class="box box7" data-id=7>
-                <p></p>
-            </div>
-            <div class="box box8" data-id=8>
-                <p></p>
-            </div>
+      <h1 class="title">Tic Tac Toe</h1>
+      <div class="board-container">
+        <div class="box box0" data-id="0">
+          <p></p>
         </div>
-        <h1 class="text-to-play"></h1>
+        <div class="box box1" data-id="1">
+          <p></p>
+        </div>
+        <div class="box box2" data-id="2">
+          <p></p>
+        </div>
+        <div class="box box3" data-id="3">
+          <p></p>
+        </div>
+        <div class="box box4" data-id="4">
+          <p></p>
+        </div>
+        <div class="box box5" data-id="5">
+          <p></p>
+        </div>
+        <div class="box box6" data-id="6">
+          <p></p>
+        </div>
+        <div class="box box7" data-id="7">
+          <p></p>
+        </div>
+        <div class="box box8" data-id="8">
+          <p></p>
+        </div>
+      </div>
+      <h1 class="text-to-play"></h1>
     </div>
 
     <div class="modal game-over-modal">
-        <div class="wrapper">
-            <h1 class="game-over-modal-text"></h1>
-            <button class="reset-button">
-                Reset Game
-            </button>
-        </div>
+      <div class="wrapper">
+        <h1 class="game-over-modal-text"></h1>
+        <button class="reset-button">Reset Game</button>
+      </div>
     </div>
 
     <div class="modal select-mode-modal">
-        <h1>Tic Tac Toe</h1>
-        <div class="select-modal-wrapper">
-
-            <h2>Select a Game Mode </h2>
-            <h3 class="select-modal-mode" data-mode="1">Player Vs Player </h3>
-            <h3 class="select-modal-mode" data-mode="2">Player Vs Computer </h3>
-        </div>
+      <h1>Tic Tac Toe</h1>
+      <div class="select-modal-wrapper">
+        <h2>Select a Game Mode</h2>
+        <h3 class="select-modal-mode" data-mode="1">Player Vs Player</h3>
+        <h3 class="select-modal-mode" data-mode="2">Player Vs Computer</h3>
+      </div>
     </div>
 
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>

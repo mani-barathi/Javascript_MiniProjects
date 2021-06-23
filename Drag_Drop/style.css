@@ -1,59 +1,62 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgba(216, 215, 215, 0.411);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.text,.item,.sub-text{ 
-    font-weight: 500;
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgba(216, 215, 215, 0.411);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.text{
-    margin: 1rem 0;
+.text,
+.item,
+.sub-text {
+  font-weight: 500;
 }
 
-.sub-text{
-    color: rgb(141, 136, 136);    
-    position: absolute;
-    bottom: 2px;
-    left: 16px;
-    font-size: 0.8rem;
+.text {
+  margin: 1rem 0;
 }
 
-.item-container{
-    width: 92%;
-    max-width: 600px;
-    padding: 1rem ;
-    border-radius: 10px;
-    background-color: #f3f3f3;
-    box-shadow: 2px 5px 30px 10px  rgba(0,0,0, 0.1);
-    padding-top: 2rem;
-    user-select: none;
+.sub-text {
+  color: rgb(141, 136, 136);
+  position: absolute;
+  bottom: 2px;
+  left: 16px;
+  font-size: 0.8rem;
 }
 
-.favorites{
-    position: relative;
+.item-container {
+  width: 92%;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  box-shadow: 2px 5px 30px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+  user-select: none;
 }
 
-.item{
-    padding: 1rem 2rem;
-    user-select: none;
-    border-radius: 5px;
-    border: 2px solid rgba(0, 128, 128, 0.822);
-    margin-bottom: 1rem;
-    cursor: move;
+.favorites {
+  position: relative;
 }
 
-.item.dragging{
-    opacity: 0.8;
-    background-color: rgb(199, 199, 199);
+.item {
+  padding: 1rem 2rem;
+  user-select: none;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 128, 128, 0.822);
+  margin-bottom: 1rem;
+  cursor: move;
+}
+
+.item.dragging {
+  opacity: 0.8;
+  background-color: rgb(199, 199, 199);
 }
