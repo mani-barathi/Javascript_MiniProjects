@@ -37,7 +37,6 @@ function sleep(milliseconds) { // block the callStack for the given value in arg
 }
 
 async function merge(arr, left, middle, right) {
-
     let i, j, k
     let n1 = middle - left + 1
     let n2 = right - middle
