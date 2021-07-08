@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Sorting Visualizer ❣</title>
+    <title>Sorting Visualizer</title>
+    <style>
+        *{
+            margin:0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            width:100vw;height:100vh;
+            display:flex;align-items:center;justify-content:center;
+        }
+        nav{
+            /* width:90%; */
+            max-width: 550px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        
+            /* min-height: 60vh; */
+            /* border:1px solid black; */
+        }
+        li{
+            list-style: none;
+            padding-bottom:1rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: transform 300ms ease-in-out;
+        }
+        li:hover{
+            transform: scale(1.5,1.5);
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        a:active{
+            color:black;
+        }
+    </style>
 </head>
 <body>
-    <span>
-        Bubble Sorting- 🧡- Left Element,💛- right Element,💚- Match So Swap.<br/>
-        Refresh the page to see the swap again🔥
-    </span>
+    <nav>
+        <li><a href="./bubbleSort.html">Bubble Sort</a></li>
+        <li><a href="./mergeSort.html">Merge Sort</a></li>
+        <li><a href="./selectionSort.html">Selection Sort</a></li>
+        <li><a href="./quickSort.html">Quick Sort</a></li>
+    </nav>
 </body>
-    <script src="./app.js"></script>
 </html>
