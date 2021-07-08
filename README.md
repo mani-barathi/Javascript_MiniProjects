@@ -1,6 +1,6 @@
 # Javascript_MiniProjects
 
-This Repo contains some of the Vanila Javascript Mini Projects which I did. All the projects listed here are Beginner to Intermdiate level.
+This Repo contains Vanila Javascript Projects. All the projects listed here are Beginner to Intermdiate level. **Contributions are Welcomed**
 
 Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to View the Projects
 
@@ -20,6 +20,7 @@ Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to Vie
 | 12  | [Password Generator](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Password_Generator) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Password_Generator/index.html) |
 | 13  | [Pomodoro Timer](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Pomodoro_Timer)         | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Pomodoro_Timer/index.html)     |
 | 14  | [Quotes Generator](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Quote_generator)      | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Quote_generator/index.html)    |
+| 14  | [Sorting Visualizer](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Sorting_Visualizer) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Sorting_Visualizer/index.html) |
 | 15  | [Text Editor](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Text_Editor)               | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Text_Editor/index.html)        |
 | 16  | [TicTacToe](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TicTacToe)                   | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TicTacToe/index.html)          |
 | 17  | [TodoList](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TodoList)                     | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)           |
