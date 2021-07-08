@@ -37,6 +37,7 @@ function sleep(milliseconds) { // block the callStack for the given value in arg
 }
 
 async function merge(arr, left, middle, right) {
+
     let i, j, k
     let n1 = middle - left + 1
     let n2 = right - middle
@@ -52,6 +53,7 @@ async function merge(arr, left, middle, right) {
     i = 0; j = 0; k = left;
 
     while (i < n1 && j < n2) {
+        await sleep(10)
         if (leftTemp[i] <= rightTemp[j]) {
             arr[k].style.height = leftTemp[i] + 'px';
             i++;
@@ -60,7 +62,7 @@ async function merge(arr, left, middle, right) {
             arr[k].style.height = rightTemp[j] + 'px';
             j++;
         }
-        await sleep(10)
+        // await sleep(10)
 
         k++;
     }
@@ -68,7 +70,7 @@ async function merge(arr, left, middle, right) {
     /* Copy the remaining elements of L[], if there
   are any */
     while (i < n1) {
-
+        await sleep(10)
         arr[k].style.height = leftTemp[i] + 'px';
         i++;
         k++;
@@ -77,8 +79,7 @@ async function merge(arr, left, middle, right) {
     /* Copy the remaining elements of R[], if there
     are any */
     while (j < n2) {
-
-
+        await sleep(10)
         arr[k].style.height = rightTemp[j] + 'px';
         j++;
         k++;
@@ -88,7 +89,8 @@ async function merge(arr, left, middle, right) {
 }
 
 async function mergeSort(arr, left, right) {
-
+    // console.log(left, right)
+    await sleep(100)
     if (left < right) {
 
         arr[left].style.backgroundColor = 'orange';
@@ -99,21 +101,14 @@ async function mergeSort(arr, left, right) {
         arr[middle].style.backgroundColor = 'red'
 
 
-
-
-
-
-
-
-
-        mergeSort(arr, left, middle)
-        mergeSort(arr, middle + 1, right)
-
+        await sleep(100)
         arr[left].style.backgroundColor = '';
         arr[right].style.backgroundColor = '';
         arr[middle].style.backgroundColor = ''
-        // await sleep(10)
-        merge(arr, left, middle, right)
+
+        await mergeSort(arr, left, middle)
+        await mergeSort(arr, middle + 1, right)
+        await merge(arr, left, middle, right)
 
 
     }
