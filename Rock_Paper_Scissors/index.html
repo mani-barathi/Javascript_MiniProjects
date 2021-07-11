@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>RockPaperScissors ❣</title>
+  </head>
+  <body>
+    <section class="game">
+        <!-- score-div -->
+        <div class="score">
+            <div class="player-score">
+                <h3>Player</h3>
+                <p class="count-player">
+                        0
+                </p>
+            </div>
+            <div class="computer-score">
+                <h3>Computer</h3>
+                <p class="count-computer">
+                    0
+                </p>
+            </div>
+        </div>
+        <!-- intro-div -->
+        <div class="intro">
+            <h1>Rock Paper and Scissor</h1>
+            <button id="play-btn">Let's Play..!</button>
+        </div>
+
+        <!-- match -->
+        <div class="match fade-out">
+            <center><h1 class="report">Choose an Option</h1></center>
+            <div class="hands ">
+                <img class="player-hand" src="./assets/rock-player.png" alt="rock"/>
+                <img class="computer-hand" src="./assets/rock.png" alt="rock"/>
+            </div>
+            <div class="options">
+                <button id="user-control-btn" data-src="rock-player.png">Rock 🛑</button>
+                <button   id="user-control-btn" data-src="paper-player.png">Paper 📜</button>
+                <button id="user-control-btn"
+                data-src="scissors-player.png">Scissor ✂</button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
