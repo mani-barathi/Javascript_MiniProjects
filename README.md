@@ -1,6 +1,8 @@
 # Javascript MiniProjects
 
-This Repo contains Vanila Javascript Projects. All the projects listed here are Beginner to Intermdiate level. **Contributions are Welcomed**
+This Repo contains Vanila Javascript Projects. All the projects listed here are Beginner to Intermdiate level. 
+
+**Contributions are Welcomed💙**
 
 Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to View the Projects
 
@@ -27,3 +29,9 @@ Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to Vie
 | 18  | [TodoList](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TodoList)                     		| [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)           |
 | 20  | [Weather App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Weather_App)               		| [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Weather_App/index.html)        |
 
+## Contributions
+- Make sure to raise an Issue befor making an PR. 
+- If it is new project, make sure to put the files inside a seperate folder with suitable name.
+- Don't add project which is same or similar to the existing ones unless there is a an improvement.
+- Improvement in existing project is also welcomed.
+- If it is a new project, add link to the project in `./README` and `./main.js`, make sure to follow alphabetical order.
