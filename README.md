@@ -25,10 +25,11 @@ Click [**here**](https://mani-barathi.github.io/Javascript_MiniProjects/) to Vie
 | 15  | [Rock Paper Scissors](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Rock_Paper_Scissors)             | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Quote_generator/index.html)           |
 | 16  | [Sortable Searchable Table](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Sortable_Searchable_Table) | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Sortable_Searchable_Table/index.html) |
 | 17  | [Sorting Visualizer](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Sorting_Visualizer)               | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Sorting_Visualizer/index.html)        |
-| 18  | [Text Editor](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Text_Editor)                             | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Text_Editor/index.html)               |
-| 19  | [TicTacToe](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TicTacToe)                                 | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TicTacToe/index.html)                 |
-| 20  | [TodoList](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TodoList)                                   | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)                  |
-| 21  | [Weather App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Weather_App)                             | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Weather_App/index.html)               |
+| 18  | [Speech Recognition](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Speech_Recognition)               | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Speech_Recognition/index.html)        |
+| 19  | [Text Editor](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Text_Editor)                             | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Text_Editor/index.html)               |
+| 20  | [TicTacToe](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TicTacToe)                                 | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TicTacToe/index.html)                 |
+| 21  | [TodoList](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/TodoList)                                   | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/TodoList/index.html)                  |
+| 22  | [Weather App](https://github.com/mani-barathi/Javascript_MiniProjects/tree/master/Weather_App)                             | [Link](https://mani-barathi.github.io/Javascript_MiniProjects/Weather_App/index.html)               |
 
 ## Contributions
 

@@ -34,10 +34,15 @@ const links = [
     name: "Sorting Visualizer",
     url: "./Sorting_Visualizer/index.html",
   },
-  { id: 18, name: "Text Editor", url: "./Text_Editor/index.html" },
-  { id: 19, name: "TicTacToe", url: "./TicTacToe/index.html" },
-  { id: 20, name: "TodoList", url: "./TodoList/index.html" },
-  { id: 21, name: "Weather App", url: "./Weather_App/index.html" },
+  {
+    id: 18,
+    name: "Speech Recognition",
+    url: "./Speech_Recognition/index.html",
+  },
+  { id: 19, name: "Text Editor", url: "./Text_Editor/index.html" },
+  { id: 20, name: "TicTacToe", url: "./TicTacToe/index.html" },
+  { id: 21, name: "TodoList", url: "./TodoList/index.html" },
+  { id: 22, name: "Weather App", url: "./Weather_App/index.html" },
 ];
 
 function renderLinks() {
